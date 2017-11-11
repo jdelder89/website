@@ -1,0 +1,162 @@
+<!--Static website prototype - Cognitir Workshop on HTML, CSS and JavaScript - 11/11/17 */ -->
+
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> 
+		<style>
+			body {
+				background: rgb(242,242,242);
+				text-align: center;
+			}
+			h1 {
+				/* note: comment format in CSS */
+				font-weight: bold;
+				font-size: 30px;
+			}
+			h3 { 
+				font-weight: bold;
+				color: rgb(29,39,175);
+				font-size: 24px;
+			}
+			p {
+				font-size: 18px;
+			}
+			#image1 {
+				max-height: 600px;
+				max-width: 600px;
+				height: auto;
+				width: auto;
+				margin: 5px;
+			}
+			#image2 {
+				max-height: 400px;
+				max-width: 400px;
+				height: auto;
+				width: auto;
+				margin: 5px;
+			}
+			ul {
+				list-style-position: inside;
+				text-align: left;
+				margin-left: 35%;
+			}
+		</style>
+	</head>
+
+	<body>
+		
+		<nav class="navbar navbar-inverse navbar-fixed-top"> 
+			<div class="container"> 
+				<div class="navbar-header"> 
+					<button type="button" class="navbar-toggle collapsed" datatoggle="collapse" data-target="#navbar" aria-expanded="false" ariacontrols="navbar"> 
+						<span class="sr-only">Toggle navigation</span> 
+						<span class="icon-bar"></span> 
+						<span class="icon-bar"></span> 
+						<span class="icon-bar"></span> 
+					</button> 
+					<a class="navbar-brand" href="#">LaunchPad</a> 
+				</div> 
+				<div id="navbar" class="collapse navbar-collapse"> 
+					<ul class="nav navbar-nav"> 
+						<li class="active"><a href="#">Home</a></li> 
+						<li><a href="file:///C:/Users/Joshua/Desktop/index2.html" target="_blank">Team</a></li> 
+						<li><a href="file:///C:/Users/Joshua/Desktop/index3.html" target="_blank">Contact Us</a></li> 
+					</ul> 
+				</div><!--/.nav-collapse --> 
+			</div> 
+		</nav> 
+
+		<section>
+			<div>
+				<h1> LaunchPad </h1>
+				<img id="image1" src="https://i.ytimg.com/vi/xIoRWIgzvbM/maxresdefault.jpg">
+				<h1> <em> LaunchPad: <span style="color:rgb(124,28,36);"> Accelerating </span> the <span style="color:rgb(124,28,36);"> commercialization </span> of novel science </em> </h1>
+			</div>
+		</section>
+
+		<section>
+			<div>
+				<h3> Scientists </h3>
+				<p> 
+					<strong> Share </strong> your <a href="https://www.uspto.gov/" target="_blank"> <em> Research </em> </a> with the <strong> World </strong> 
+					<uL style="list-style-type:square">
+						<li> Form a holding company </li>
+						<li> Create a capital structure </li>
+						<li> Collaborate with experienced entrepreneurs and advisors </li>
+					</uL>
+				</p>
+			</div>
+
+			<div>
+				<h3> Entrepreneurs </h3>
+				<p> 
+					<strong> Commercialize </strong> <em> Discoveries </em> 
+				</p>
+				<img id="image2" src="http://marsinnovation.com/wp-content/uploads/2010/03/commercialization-04.png">
+			</div>
+
+			<div>
+				<h3> Advisors </h4>
+				<p> 
+					<strong> Coach </strong> the Next Wave of <em> Entrepreneurs </em> 
+					<uL style="list-style-type:square">
+						<li> Board Member </li>
+						<li> Observer </li>
+					</uL>
+				</p>
+			</div>
+		</section>
+
+
+		<!-- javascript functions>
+		<section>
+			<div>
+				<p id="myParagraph"> temp 
+				<button type="button" onclick="document.getElementById('myParagraph').innerHTML = 'Hello World'">Click</button>
+				</p>	
+
+				<p id="prettyParagraph">
+					This is my pretty paragraph
+					<button type="button" onclick="applyStyling()">Make it pretty!</button>
+				</p>
+				<script> 
+						function applyStyling() { 
+							var paragraph = document.getElementById("prettyParagraph"); 
+							paragraph.style.color = "green"; 
+							paragraph.style.fontSize = "29px"; 
+							paragraph.style.fontWeight = "700"; } 
+				</script>
+			</div>
+		</section>
+		-->
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+
+		<div id="myCarousel" class="carousel slide" data-ride="carousel"> 
+			<div class="carousel-inner" role="listbox"> 
+				<div class="item active"> 
+					Please share with your friends. 
+				</div> 
+				<div class="item"> 
+					Have you shared yet? 
+				</div> 
+				<div class="item"> 
+					Muchas gracias! 
+				</div>
+			</div> 
+		</div>
+
+		<script type="text/javascript">
+			$(document).ready(function() { 
+				$("#myCarousel").carousel({interval: 2000}); 
+			});
+		</script>
+
+
+	</body>
+
+</html>
